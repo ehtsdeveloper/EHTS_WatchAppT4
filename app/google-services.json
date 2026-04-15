@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "38882764031",
+    "firebase_url": "https://biasdetection-8e483-default-rtdb.firebaseio.com",
+    "project_id": "biasdetection-8e483",
+    "storage_bucket": "biasdetection-8e483.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38882764031:android:340b4c2f031c38462ed8ca",
+        "android_client_info": {
+          "package_name": "com.example.ehts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo0zJN6DjSgV1299v-lETttzsxep46f7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
