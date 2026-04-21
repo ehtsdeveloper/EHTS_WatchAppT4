@@ -402,7 +402,6 @@ fun TestScreen(
                         toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP)
                         isBaselineCompleted = true
 
-                        // HR Baseline
                         baselineHRMean = baselineHRList.average().toFloat()
                         val hrSumSq = baselineHRList.fold(0.0) { acc, num -> acc + (num - baselineHRMean).pow(2) }
                         baselineHRStdDev = sqrt(hrSumSq / baselineHRList.size).toFloat().coerceAtLeast(3.0f)
@@ -428,7 +427,7 @@ fun TestScreen(
                             (1.5f * hrvDropZ.coerceAtLeast(0f)) +
                             (0.5f * activeMotionZ)
 
-                    val isStress = totalStressVolume >= 3.0f
+                    val isStress = totalStressVolume >= 4.0f
 
                     if (isStress) {
                         stressState = "STRESS DETECTED"
