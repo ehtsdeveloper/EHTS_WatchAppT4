@@ -402,6 +402,7 @@ fun TestScreen(
                         toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP)
                         isBaselineCompleted = true
 
+                        // HR Baseline
                         baselineHRMean = baselineHRList.average().toFloat()
                         val hrSumSq = baselineHRList.fold(0.0) { acc, num -> acc + (num - baselineHRMean).pow(2) }
                         baselineHRStdDev = sqrt(hrSumSq / baselineHRList.size).toFloat().coerceAtLeast(3.0f)
